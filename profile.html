@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauritz Fokdal Koch - Professional Profile</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Inter, Arial, sans-serif;
+            background: #eef4fb;
+            color: #1d2537;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: radial-gradient(circle at top left, rgba(8, 95, 199, 0.12), transparent 30%),
+                        linear-gradient(180deg, #f7fbff 0%, #eef4fa 100%);
+        }
+        .page {
+            width: min(100%, 1080px);
+            background: rgba(255,255,255,0.98);
+            border-radius: 32px;
+            box-shadow: 0 32px 90px rgba(25, 45, 84, 0.12);
+            border: 1px solid rgba(31, 73, 125, 0.08);
+            overflow: hidden;
+        }
+        .hero {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 0;
+            min-height: 320px;
+            align-items: center;
+            padding: 48px 56px;
+        }
+        .hero-content h1 {
+            margin: 0;
+            font-size: clamp(2.7rem, 3vw, 3.8rem);
+            letter-spacing: -0.04em;
+            line-height: 1;
+        }
+        .hero-content p {
+            color: #556279;
+            max-width: 520px;
+            margin-top: 16px;
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .avatar-frame {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.8);
+            box-shadow: 0 24px 50px rgba(9, 73, 156, 0.18);
+            overflow: hidden;
+            background: #fff;
+        }
+        .avatar-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            padding: 24px 56px 48px;
+        }
+        .content section {
+            margin-bottom: 42px;
+        }
+        h2 {
+            font-size: 1.55rem;
+            margin-bottom: 18px;
+            color: #13203b;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            color: #22304b;
+        }
+        p, li {
+            color: #4f5f76;
+            line-height: 1.8;
+        }
+        ul {
+            margin: 18px 0 0 20px;
+            padding: 0;
+            list-style: disc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 14px 34px rgba(22, 56, 125, 0.05);
+        }
+        th, td {
+            padding: 16px 18px;
+            border: none;
+            background: #fff;
+        }
+        th {
+            background: #f0f6ff;
+            color: #1a2b45;
+            text-align: left;
+            font-weight: 700;
+        }
+        tr + tr td {
+            border-top: 1px solid #edf2f8;
+        }
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background: rgba(15, 97, 215, 0.08);
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+        .pill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+            padding: 0;
+            list-style: none;
+        }
+        .pill-list li {
+            background: #eef5ff;
+            color: #104581;
+            border-radius: 999px;
+            padding: 8px 14px;
+            font-size: 0.95rem;
+        }
+        .footer {
+            padding: 24px 56px 32px;
+            border-top: 1px solid rgba(31, 73, 125, 0.08);
+            color: #667088;
+        }
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 18px;
+        }
+        .nav-links a {
+            color: #0f61d7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 36px 32px;
+            }
+            .content, .hero {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+        }
+        @media (max-width: 620px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .avatar-frame {
+                width: 200px;
+                height: 200px;
+            }
+            .hero, .content {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="page">
+        <div class="hero">
+            <div class="hero-content">
+                <p style="margin:0 0 20px;color:#0f61d7;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;font-size:0.82rem;">Professional profile</p>
+                <h1>Lauritz Fokdal Koch</h1>
+                <p>Full-stack .NET developer with experience building enterprise SaaS applications, including multi-tenant and single-tenant architectures. I focus on maintainable layered design, high code quality and pragmatic AI-assisted development.</p>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="cv.html">CV</a>
+                    <a href="job-applications.html">Job applications</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-frame">
+                    <img src="portrait.svg" alt="Portrait of Lauritz Fokdal Koch">
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section id="summary">
+                <h2>Summary</h2>
+                <p>Full-stack .NET developer with experience building enterprise SaaS applications, including both multi-tenant (shared database, tenant-isolated) and single-tenant (dedicated instance per customer) architectures. Strong focus on layered architecture, code quality, and effective integration of AI-assisted development tools.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Core Technical Skills</h2>
+                <table>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                    <tr>
+                        <td>Backend</td>
+                        <td>.NET 8, ASP.NET Core MVC, Entity Framework Core 8, Dependency Injection, Hangfire</td>
+                    </tr>
+                    <tr>
+                        <td>Architecture</td>
+                        <td>Layered architecture, Result/Option patterns, Domain Events, CQRS-lite (Query/Repository split)</td>
+                    </tr>
+                    <tr>
+                        <td>Frontend</td>
+                        <td>TypeScript (strict), Web Components (Custom Elements API), SCSS, esbuild</td>
+                    </tr>
+                    <tr>
+                        <td>Database</td>
+                        <td>SQL Server, migration-based schema evolution (DbUp), query tagging/diagnostics</td>
+                    </tr>
+                    <tr>
+                        <td>Testing</td>
+                        <td>xUnit, integration tests with real DB fixtures, Cypress E2E</td>
+                    </tr>
+                    <tr>
+                        <td>SaaS Models</td>
+                        <td>Multi-tenant (shared DB w/ tenant ID isolation), Single-tenant (dedicated DB per customer)</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="projects">
+                <h2>Key Project Contributions</h2>
+                <h3>Meeting Planning Module — Full-Stack Feature Development</h3>
+                <p>Designed and implemented a meeting plan scheduling system within an enterprise ASP.NET Core MVC application:</p>
+                <ul>
+                    <li><strong>Placeholder architecture</strong> — Modeled meeting plans with placeholder agenda items that propagate to concrete meetings upon instantiation, supporting forward-planning workflows without premature data commitment.</li>
+                    <li><strong>Cross-committee parallelism</strong> — Extended the domain model to support concurrent meetings across organizational units, handling FK constraints, access scoping, and query isolation via EF Core.</li>
+                    <li><strong>Service layer orchestration</strong> — Built service following strict layered architecture (Controller → Service → ValidationService → Queries/Repositories) with <code>Result&lt;T&gt;</code> return types for explicit success/failure handling.</li>
+                </ul>
+
+                <h3>Access Control Refactoring — Query Layer Consolidation</h3>
+                <p>Refactored authorization logic into a centralized access query component:</p>
+                <ul>
+                    <li>Consolidated scattered permission checks into composable, reusable query methods with <code>AsNoTracking()</code> and <code>.TagWith()</code> for diagnostics.</li>
+                    <li>Eliminated N+1 access check patterns by batching permission evaluation at the query level.</li>
+                    <li>Established a single source of truth for access decisions, simplifying auditing and reducing security surface area.</li>
+                </ul>
+
+                <h3>Custom Web Components — TypeScript / Vanilla JS</h3>
+                <p>Built reusable Custom Elements (<code>XChooser</code>, <code>XTemplateChooser</code>) extending a shared base element class:</p>
+                <ul>
+                    <li>Implemented with NodeNext module resolution (<code>.js</code> imports), no jQuery.</li>
+                    <li>Encapsulated search, filtering, async data fetching, and keyboard navigation.</li>
+                    <li>Designed for composition — components communicate via custom events and slot-based content projection.</li>
+                    <li>Iterated through multiple UX refinement cycles, optimizing for accessibility and responsiveness.</li>
+                </ul>
+
+                <h3>Backend Validation Framework — Unified Error Handling</h3>
+                <p>Architected a validation pipeline spanning backend rules to frontend display:</p>
+                <ul>
+                    <li><strong>ValidationResult</strong> — Immutable result type with factory methods (<code>Success()</code>, <code>Error()</code>, <code>Warning()</code>) aggregating keyed error messages.</li>
+                    <li><strong>ValidationService + Rules separation</strong> — Services fetch required data via Queries, then delegate to pure rule classes with no DB access for testability.</li>
+                    <li><strong>Problem Details response</strong> — Controllers return <code>ValidationProblem()</code> with structured <code>ModelState</code> errors on failure.</li>
+                    <li><strong>ValidationDialogService (TypeScript)</strong> — Frontend service consuming <code>ProblemDetails</code> JSON and rendering errors via a dedicated Web Component.</li>
+                </ul>
+            </section>
+
+            <section id="ai-development">
+                <h2>AI-Assisted Development</h2>
+                <p><strong>Tools used in daily workflow:</strong></p>
+                <ul>
+                    <li><strong>GitHub Copilot</strong> — IDE-integrated inline code completion and generation.</li>
+                    <li><strong>Windsurf</strong> — Agentic AI coding assistant for larger refactoring and feature implementation.</li>
+                    <li><strong>Devin (app.devin.ai)</strong> — Autonomous AI software engineer for delegated development tasks.</li>
+                    <li><strong>GitHub integration</strong> — Connected AI tooling to repositories for context-aware assistance.</li>
+                </ul>
+                <p><strong>Approach:</strong></p>
+                <ul>
+                    <li>Integrated AI assistants into daily development while maintaining ownership of code quality and architectural decisions.</li>
+                    <li>Evaluated multiple AI coding tools, understanding their respective strengths (inline suggestions vs. agentic execution).</li>
+                    <li>Reviewed, tested, and adapted AI-generated code to project conventions and layered architecture rules.</li>
+                </ul>
+                <p><strong>Continuous learning:</strong></p>
+                <p>Reading <em>Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond</em> (Gene Kim & Steve Yegge, IT Revolution, 2025) to apply emerging best practices for AI-assisted software development.</p>
+            </section>
+
+            <footer class="footer">
+                <p>&copy; 2026 Lauritz Fokdal Koch</p>
+            </footer>
+        </div>
+    </article>
+</body>
+</html>

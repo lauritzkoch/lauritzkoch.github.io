@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Lauritz Fokdal Koch</title>
+    <style>
+        :root {
+            font-family: Inter, Arial, sans-serif;
+            background: #f5f8fb;
+            color: #192532;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+            background: radial-gradient(circle at top left, rgba(11, 87, 176, 0.12), transparent 26%), #f5f8fb;
+        }
+        .page {
+            width: min(100%, 1040px);
+            background: rgba(255,255,255,0.98);
+            border-radius: 28px;
+            box-shadow: 0 30px 90px rgba(24, 44, 84, 0.12);
+            border: 1px solid rgba(31, 73, 125, 0.08);
+            overflow: hidden;
+        }
+        .hero {
+            padding: 44px 56px;
+            display: grid;
+            grid-template-columns: 1.3fr 0.9fr;
+            gap: 32px;
+            align-items: center;
+            background: linear-gradient(135deg, #f7fbff 0%, #eef5fb 100%);
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: clamp(2.5rem, 3vw, 3.4rem);
+            letter-spacing: -0.04em;
+        }
+        .hero p {
+            margin: 16px 0 0;
+            max-width: 520px;
+            color: #50617a;
+            line-height: 1.75;
+        }
+        .hero .contact {
+            display: grid;
+            gap: 14px;
+            margin-top: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
+        .hero .contact div {
+            background: #fff;
+            border: 1px solid rgba(47, 86, 158, 0.08);
+            border-radius: 14px;
+            padding: 16px 18px;
+            color: #38475c;
+        }
+        .hero .contact strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #0f61d7;
+        }
+        .hero-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 30px;
+        }
+        .hero-links a {
+            padding: 14px 18px;
+            border-radius: 999px;
+            background: #0f61d7;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+        .hero-links a:hover {
+            transform: translateY(-1px);
+            background: #0b4a9c;
+        }
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .avatar-frame {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #fff;
+            border: 5px solid rgba(255,255,255,0.9);
+            box-shadow: 0 24px 50px rgba(10, 70, 143, 0.16);
+        }
+        .avatar-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            padding: 32px 56px 48px;
+        }
+        .content section {
+            margin-bottom: 36px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: #122040;
+        }
+        h3 {
+            margin: 0 0 12px;
+            font-size: 1.1rem;
+            color: #1d2d44;
+        }
+        p, li {
+            color: #45546a;
+            line-height: 1.75;
+        }
+        ul {
+            margin: 14px 0 0 20px;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        .two-column section {
+            margin: 0;
+        }
+        .pill-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            margin: 14px 0 0 0;
+        }
+        .pill-list li {
+            background: #eef4ff;
+            color: #0d4a8c;
+            border-radius: 999px;
+            padding: 10px 14px;
+            font-size: 0.95rem;
+        }
+        .footer {
+            padding: 20px 56px 28px;
+            border-top: 1px solid rgba(31, 73, 125, 0.08);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            color: #6a7b92;
+        }
+        .footer a {
+            color: #0f61d7;
+            text-decoration: none;
+        }
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 32px;
+            }
+            .content, .hero {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+        }
+        @media (max-width: 640px) {
+            .hero {
+                gap: 24px;
+            }
+            .hero-image {
+                order: -1;
+            }
+            .avatar-frame {
+                width: 180px;
+                height: 180px;
+            }
+            .hero-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="page">
+        <div class="hero">
+            <div>
+                <h1>Lauritz Fokdal Koch</h1>
+                <p>Jeg er en engageret datalog med erfaring i udvikling af robuste softwareløsninger, dataintegration og brugercentrerede systemer.</p>
+                <div class="hero-links">
+                    <a href="index.html">Forside</a>
+                    <a href="profile.html">Profil</a>
+                    <a href="job-applications.html">Jobansøgninger</a>
+                </div>
+                <div class="contact" style="margin-top:28px;">
+                    <div><strong>Telefon</strong>+45 29 78 04 76</div>
+                    <div><strong>Email</strong><br><a href="mailto:Lauritzk@gmail.com">Lauritzk@gmail.com</a></div>
+                    <div><strong>Base</strong>København / ved at flytte til Århus</div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-frame">
+                    <img src="portrait.svg" alt="Portræt af Lauritz Fokdal Koch">
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section class="section">
+                <h2>Faglig profil</h2>
+                <p>Jeg er en engageret og analytisk datalog med erfaring inden for udvikling af skræddersyede softwareløsninger, databehandling og systemintegration. Min erfaring spænder bredt fra udvikling af REST API’er og optimering af datatransformationer til mobiloptimering og implementering af brugercentrerede løsninger.</p>
+                <p>Jeg trives i samarbejdsorienterede miljøer, hvor jeg kan kombinere min tekniske viden med forretningsforståelse for at skabe værdi. Med en solid baggrund i teknologier som C#, SQL, JavaScript/TypeScript og en passion for at levere skalerbare og effektive løsninger, motiveres jeg af komplekse udfordringer og at bygge løsninger, der gør en forskel i praksis.</p>
+                <p>Som en detaljeorienteret og nysgerrig udvikler er jeg altid på udkig efter nye teknologier og metoder til at forbedre mine færdigheder og optimere arbejdsprocesser. Jeg brænder for at skabe teknologiske løsninger, der ikke bare virker, men også gør en forskel i praksis.</p>
+            </section>
+
+            <section class="section">
+                <h2>Erfaring</h2>
+                <article>
+                    <h3>Softwareudvikler, Macom A/S</h3>
+                    <p><em>August 2023 – i dag</em></p>
+                    <ul>
+                        <li>Udviklede og implementerede en løsning til at importere og behandle data fra et eksternt studieadministrativt system.</li>
+                        <li>Arbejdet med datarensning og -transformering for at håndtere dårlig data og sikre kompatibilitet mellem systemers datamodeller.</li>
+                        <li>Optimerede virksomhedens hjemmeside til mobil og forbedrede brugeroplevelsen med autologin og QR-baseret billedupload.</li>
+                        <li>Håndterede ugentlige ad-hoc udviklingsopgaver som en del af et fleksibelt team.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Testudvikler – Studentermedarbejder, PDC A/S</h3>
+                    <p><em>September 2021 – juni 2022</em></p>
+                    <ul>
+                        <li>Assisterede i udvikling og vedligeholdelse af automatiserede testscripts for at sikre høj kvalitet i softwareudviklingen.</li>
+                        <li>Udførte browsertests med før/efter screenshots.</li>
+                        <li>Udviklede unit tests til funktionalitetskontrol.</li>
+                        <li>Modtog undervisning i det deklarative kodesprog Prolog.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Helpdesk – Studentermedarbejder, Knowledge Cube A/S</h3>
+                    <p><em>Januar 2021 – september 2021</em></p>
+                    <ul>
+                        <li>Ydede FirstLine support til brugere via telefon og e-mail.</li>
+                        <li>Analysere og løste softwarerelaterede problemer.</li>
+                        <li>Dokumenterede brugerinteraktioner og løsninger for at sikre korrekt opfølgning.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="section two-column">
+                <section>
+                    <h2>Uddannelse</h2>
+                    <p><strong>Københavns Universitet</strong><br>Bachelor i datalogi<br><em>September 2018 – januar 2023</em></p>
+                    <ul>
+                        <li>Softwareudvikling, interaktionsdesign og AI.</li>
+                        <li>Studieretning i datascience, herunder machine learning og big-data behandling.</li>
+                        <li>Bachelorprojekt i videnskabsteori: “Kan AI være bevidst?”</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Frivillig</h2>
+                    <p><strong>Coding Pirates</strong><br>Programmering for børn<br><em>August 2020 – januar 2021</em></p>
+                    <ul>
+                        <li>Underviste børn i at programmere et simpelt bil-spil i Unity med C#.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="section">
+                <h2>Om mig</h2>
+                <p>Lauritz Fokdal Koch, 29 – familiefar. Jeg prioriterer mine børn Johan og Frida og familielivet højt. Siden Fridas ankomst i november 2024 har jeg haft ekstra fokus på balance og nærvær.</p>
+                <p>Jeg læser især om buddhisme og bruger mindfulness som ramme for at blive et mere fokuseret og ordentligt menneske. Jeg ser det som en form for træning – ligesom andre dyrker styrketræning – hvor jeg styrker sindsro og koncentration.</p>
+                <p>Jeg har også vandret Camino de Santiago og gennemført en maraton-vandredag på 130 km. Jeg sætter pris på at teste min egen udholdenhed og evne til at præstere under pres. På kontoret kan du ofte finde mig med asiatisk te, som jeg nyder for de subtile nuancer fra forskellige bjergsider.</p>
+            </section>
+
+            <section class="section">
+                <h2>Faglige kompetencer</h2>
+                <ul class="pill-list">
+                    <li>C#</li>
+                    <li>.NET Core & Framework</li>
+                    <li>REST API</li>
+                    <li>Oracle SQL</li>
+                    <li>HTML & CSS</li>
+                    <li>LESS</li>
+                    <li>JavaScript & TypeScript</li>
+                    <li>Unit tests</li>
+                    <li>Integrationstests</li>
+                    <li>Browsertests</li>
+                    <li>Systemintegration</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Teknologier</h2>
+                <ul class="pill-list">
+                    <li>GitHub</li>
+                    <li>TeamCity</li>
+                    <li>Visual Studio</li>
+                    <li>SQL Server</li>
+                    <li>Jira</li>
+                    <li>Unity</li>
+                    <li>Android Studio</li>
+                    <li>F#</li>
+                    <li>Python</li>
+                    <li>Prolog</li>
+                    <li>C</li>
+                    <li>x86-64 Assembly</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Sproglige kompetencer</h2>
+                <ul>
+                    <li>Dansk</li>
+                    <li>Engelsk (flydende)</li>
+                    <li>Spansk (begynder)</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p><a href="index.html">Tilbage til forsiden</a> | <a href="job-applications.html">Jobansøgninger</a></p>
+            <p>&copy; 2026 Lauritz Fokdal Koch</p>
+        </footer>
+    </article>
+</body>
+</html>
