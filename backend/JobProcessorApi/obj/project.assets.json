@@ -276,19 +276,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LauritzFokdalKoch\\.nuget\\packages\\": {}
+    "C:\\Users\\lauri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LauritzFokdalKoch\\lauritzkoch.github.io\\backend\\JobProcessorApi\\JobProcessorApi.csproj",
+      "projectUniqueName": "C:\\Users\\lauri\\Git-Repositories\\lauritzkoch.github.io\\backend\\JobProcessorApi\\JobProcessorApi.csproj",
       "projectName": "JobProcessorApi",
-      "projectPath": "C:\\Users\\LauritzFokdalKoch\\lauritzkoch.github.io\\backend\\JobProcessorApi\\JobProcessorApi.csproj",
-      "packagesPath": "C:\\Users\\LauritzFokdalKoch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LauritzFokdalKoch\\lauritzkoch.github.io\\backend\\JobProcessorApi\\obj\\",
+      "projectPath": "C:\\Users\\lauri\\Git-Repositories\\lauritzkoch.github.io\\backend\\JobProcessorApi\\JobProcessorApi.csproj",
+      "packagesPath": "C:\\Users\\lauri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lauri\\Git-Repositories\\lauritzkoch.github.io\\backend\\JobProcessorApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LauritzFokdalKoch\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\lauri\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"

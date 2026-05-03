@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Assistant - Lauritz Fokdal Koch</title>
+    <link rel="stylesheet" href="assets/css/application-assistant.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Application Assistant</h1>
+                <p>Generate tailored job applications, CV summaries, and interview prep using your profile and a job posting.</p>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="job-applications.html">Job Tracker</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="cv.html">CV</a>
+                </nav>
+            </div>
+            <div class="header-image">
+                <img src="assets/images/portrait.jpg" alt="Lauritz Fokdal Koch">
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>Job Details</h2>
+        <div class="grid-2">
+            <div>
+                <label for="job-link">Job posting URL</label>
+                <input type="url" id="job-link" placeholder="https://...">
+            </div>
+            <div>
+                <label for="company-link">Company website URL</label>
+                <input type="url" id="company-link" placeholder="https://...">
+            </div>
+        </div>
+        <div class="grid-2">
+            <div>
+                <label for="language">Language</label>
+                <select id="language">
+                    <option value="English">English</option>
+                    <option value="Danish">Danish</option>
+                </select>
+            </div>
+            <div>
+                <label for="tone">Tone</label>
+                <select id="tone">
+                    <option value="professional">Professional</option>
+                    <option value="concise">Concise</option>
+                    <option value="formal">Formal</option>
+                    <option value="warm">Warm</option>
+                    <option value="confident">Confident</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label for="notes">Extra notes</label>
+            <textarea id="notes" rows="3" placeholder="Specific points to emphasize, motivation, or preferences..."></textarea>
+        </div>
+        <div>
+            <label for="recommendation">Workplace recommendation (optional)</label>
+            <textarea id="recommendation" rows="4" placeholder="Paste your workplace recommendation here to strengthen your application..."></textarea>
+        </div>
+    </section>
+
+    <section>
+        <h2>Generate</h2>
+        <div class="action-buttons">
+            <button type="button" class="action-btn" data-action="analyze">Analyze job posting</button>
+            <button type="button" class="action-btn primary" data-action="application">Generate application draft</button>
+            <button type="button" class="action-btn" data-action="cv-summary">Generate tailored CV summary</button>
+            <button type="button" class="action-btn" data-action="cv-bullets">Suggest CV bullet changes</button>
+            <button type="button" class="action-btn" data-action="interview-prep">Create interview prep notes</button>
+        </div>
+        <div id="action-status" class="notice is-hidden"></div>
+    </section>
+
+    <section id="output-section" class="is-hidden">
+        <div class="output-header">
+            <h2 id="output-label">Output</h2>
+            <div class="output-actions">
+                <button type="button" class="small-btn" id="btn-copy">Copy to clipboard</button>
+                <button type="button" class="small-btn" id="btn-save">Save to job tracker</button>
+            </div>
+        </div>
+        <textarea id="output-text" rows="24"></textarea>
+        <div id="output-meta" class="is-hidden">
+            <div id="matched-skills" class="is-hidden">
+                <strong>Matched skills</strong>
+                <ul id="matched-skills-list"></ul>
+            </div>
+            <div id="potential-gaps" class="is-hidden">
+                <strong>Potential gaps</strong>
+                <ul id="potential-gaps-list"></ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to the front page</a></p>
+    </footer>
+
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/application-assistant.js"></script>
+</body>
+</html>

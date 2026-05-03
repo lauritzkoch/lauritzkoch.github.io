@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "F3pm2C1TxTc=",
+  "dgSpecHash": "tL47jBvEuzo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\LauritzFokdalKoch\\lauritzkoch.github.io\\backend\\JobProcessorApi\\JobProcessorApi.csproj",
+  "projectFilePath": "C:\\Users\\lauri\\Git-Repositories\\lauritzkoch.github.io\\backend\\JobProcessorApi\\JobProcessorApi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LauritzFokdalKoch\\.nuget\\packages\\htmlagilitypack\\1.12.4\\htmlagilitypack.1.12.4.nupkg.sha512",
-    "C:\\Users\\LauritzFokdalKoch\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.7\\microsoft.aspnetcore.openapi.10.0.7.nupkg.sha512",
-    "C:\\Users\\LauritzFokdalKoch\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
-    "C:\\Users\\LauritzFokdalKoch\\.nuget\\packages\\openai\\2.10.0\\openai.2.10.0.nupkg.sha512",
-    "C:\\Users\\LauritzFokdalKoch\\.nuget\\packages\\system.clientmodel\\1.10.0\\system.clientmodel.1.10.0.nupkg.sha512",
-    "C:\\Users\\LauritzFokdalKoch\\.nuget\\packages\\system.memory.data\\10.0.3\\system.memory.data.10.0.3.nupkg.sha512"
+    "C:\\Users\\lauri\\.nuget\\packages\\htmlagilitypack\\1.12.4\\htmlagilitypack.1.12.4.nupkg.sha512",
+    "C:\\Users\\lauri\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.7\\microsoft.aspnetcore.openapi.10.0.7.nupkg.sha512",
+    "C:\\Users\\lauri\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\lauri\\.nuget\\packages\\openai\\2.10.0\\openai.2.10.0.nupkg.sha512",
+    "C:\\Users\\lauri\\.nuget\\packages\\system.clientmodel\\1.10.0\\system.clientmodel.1.10.0.nupkg.sha512",
+    "C:\\Users\\lauri\\.nuget\\packages\\system.memory.data\\10.0.3\\system.memory.data.10.0.3.nupkg.sha512"
   ],
   "logs": []
 }
