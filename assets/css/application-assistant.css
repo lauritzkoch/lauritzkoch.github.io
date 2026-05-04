@@ -13,7 +13,7 @@ body > :not(.site-header) {
     padding-left: 24px;
     padding-right: 24px;
 }
-header {
+header:not(.site-header) {
     margin-bottom: 28px;
     background: linear-gradient(135deg, #0f61d7 0%, #0a4a9e 100%);
     color: #fff;
@@ -48,12 +48,12 @@ header {
     object-fit: cover;
 }
 
-header h1 {
+header:not(.site-header) h1 {
     color: #fff;
     margin: 0 0 8px 0;
 }
 
-header p {
+header:not(.site-header) p {
     color: rgba(255, 255, 255, 0.95);
     margin: 0 0 16px 0;
 }

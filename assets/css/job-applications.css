@@ -13,7 +13,7 @@ body {
             padding-left: 24px;
             padding-right: 24px;
         }
-        header, section, footer {
+        header:not(.site-header), section, footer {
             margin-bottom: 28px;
             background: #fff;
             padding: 22px;
