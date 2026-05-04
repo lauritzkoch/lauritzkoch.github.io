@@ -1,11 +1,17 @@
 body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0 auto;
-            max-width: 980px;
-            padding: 24px;
+            margin: 0;
+            padding: 0;
             color: #222;
             background: #f4f6f8;
+        }
+        body > :not(.site-header) {
+            max-width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 24px;
+            padding-right: 24px;
         }
         header, section, footer {
             margin-bottom: 28px;
