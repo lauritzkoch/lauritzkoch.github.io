@@ -109,6 +109,37 @@
         .content section {
             margin-bottom: 36px;
         }
+        .content section article {
+            background: #f9fbfd;
+            border-left: 4px solid #0f61d7;
+            padding: 24px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: box-shadow 0.2s ease;
+        }
+        .content section article:hover {
+            box-shadow: 0 4px 12px rgba(15, 97, 215, 0.08);
+        }
+    
+        .download-btn {
+            background: linear-gradient(135deg, #0f61d7 0%, #0a4a9e 100%);
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(15, 97, 215, 0.2);
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(15, 97, 215, 0.3);
+        }
+        .download-btn:active {
+            transform: translateY(0);
+        }
         h2 {
             font-size: 1.5rem;
             margin-bottom: 16px;
@@ -185,5 +216,28 @@
             }
             .hero-links {
                 flex-direction: column;
+            }
+        }
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+                margin: 0;
+            }
+            .page {
+                margin: 0;
+                width: 100%;
+                box-shadow: none;
+                border: none;
+                border-radius: 0;
+            }
+            .hero {
+                page-break-after: avoid;
+            }
+            .content section {
+                page-break-inside: avoid;
+            }
+            .content section article {
+                page-break-inside: avoid;
             }
         }
