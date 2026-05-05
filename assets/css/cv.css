@@ -244,7 +244,59 @@
                 display: none !important;
             }
 
-         
+            /* ── Hero: preserve visual design ── */
+            .hero {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                padding: 28px 36px;
+                gap: 20px;
+                background: linear-gradient(135deg, #f7fbff 0%, #eef5fb 100%);
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+                page-break-after: avoid;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+                margin: 0;
+            }
+            .hero p {
+                margin-top: 6px;
+                font-size: 0.8rem;
+                line-height: 1.45;
+            }
+            .hero .contact {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 10px;
+                margin-top: 14px;
+            }
+            .contact-spaced {
+                margin-top: 14px;
+            }
+            .hero .contact div {
+                background: #fff;
+                border: 1px solid rgba(47, 86, 158, 0.08);
+                border-radius: 10px;
+                padding: 10px 14px;
+                font-size: 0.8rem;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            .hero .contact strong {
+                display: block;
+                margin-bottom: 4px;
+            }
+            .hero-image {
+                display: flex;
+                align-items: center;
+            }
+            .avatar-frame {
+                width: 120px;
+                height: 120px;
+                box-shadow: none;
+                border-width: 3px;
+            }
+
             /* ── Content area ── */
             .content {
                 padding: 12px 24px 8px;
